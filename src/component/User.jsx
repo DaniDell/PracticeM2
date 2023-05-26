@@ -7,9 +7,9 @@ const Users = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.user);
 
-  useEffect(() => {
+  useEffect(() => {    /// React.useEffect(() => {  PARA QUE PASEN LOS TESTS
     dispatch(getAllUsers());
-  }, []);
+  }, [dispatch]);  // eslint-disable-next-line
 
   return (
     <div>
