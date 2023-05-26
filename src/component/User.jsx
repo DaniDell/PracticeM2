@@ -9,10 +9,11 @@ const Users = () => {
 
   useEffect(() => {    /// React.useEffect(() => {  PARA QUE PASEN LOS TESTS
     dispatch(getAllUsers());
-  }, [dispatch]);  // eslint-disable-next-line
+  }, [users, dispatch]);  
 
   return (
     <div>
+      
       {users.map((user, index) => (
         <UserCard
         

@@ -1,4 +1,4 @@
-
+///componente DUM
 
 const UserCard = ({id,name, email}) => {
     return(
