@@ -15,11 +15,13 @@ const Users = () => {
     <div>
       {users.map((user, index) => (
         <UserCard
+        
           key={index}
-          id={user.userId}
+          id={`${user.id}`}
           name={user.name}
           email={user.email}
         />
+    
       ))}
     </div>
   );
