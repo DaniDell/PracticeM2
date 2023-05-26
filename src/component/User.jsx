@@ -9,7 +9,7 @@ const Users = () => {
 
   useEffect(() => {    /// React.useEffect(() => {  PARA QUE PASEN LOS TESTS
     dispatch(getAllUsers());
-  }, [users, dispatch]);  
+  }, [dispatch]);  
 
   return (
     <div>

@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       
-      <Route path='/home' element = {<Users/>} />
+      <Route path='/' element = {<Users/>} />
     
     </Routes>
   );
