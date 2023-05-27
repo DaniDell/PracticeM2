@@ -19,7 +19,6 @@ const Forms = () => {
     const handlerSubmit = (event) => {
         event.preventDefault();
         navigate("/home");
-
     }
 
 
