@@ -1,4 +1,4 @@
-import { GET_ALL_USERS } from "./action-types";
+import { CLEAN_STATE, GET_ALL_USERS, GET_USER_DETAIL } from "./action-types";
 
 const initialState = {
   user: [],
@@ -12,6 +12,16 @@ const reducer = (state = initialState, action) => {
         ...state,
         user: action.payload
       };
+     
+    case GET_USER_DETAIL:
+      return { 
+        ...state,
+        userDetail: action.payload
+      };
+
+      case CLEAN_STATE: 
+      return {...state,
+      userDetail: {}};
 
     default:
       return { ...state };
