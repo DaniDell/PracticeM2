@@ -6,7 +6,7 @@ const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; 
 
 const store = createStore (
     reducer,
-    composeEnhancer(applyMiddleware(thunkMiddleware)) // hace llamadas asincónicas(peticiones a servidor)
+    composeEnhancer(applyMiddleware(thunkMiddleware))// hace llamadas asincónicas(peticiones a servidor)
 )
 
 export default store;
